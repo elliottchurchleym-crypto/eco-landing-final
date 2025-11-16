@@ -1,23 +1,38 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import "./index.css";
+import "./App.css";
+
+import Header from "./components/Header";
+import Hero from "./components/Hero";
+import Ecosystems from "./components/Ecosystems";
+import KPIPanel from "./components/KPIPanel";
+import Pillars from "./components/Pillars";
+import Footer from "./components/Footer";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="app-shell">
+      <Header />
+
+      <main className="main-shell">
+        <Hero />
+
+        <section id="pillars" className="section">
+          <Pillars />
+        </section>
+
+        <section id="timeline" className="section">
+          <KPIPanel />
+        </section>
+
+        <section id="ecosystem" className="section">
+          <Ecosystems />
+        </section>
+      </main>
+
+      <section id="contact" className="section section--footer">
+        <Footer />
+      </section>
     </div>
   );
 }
