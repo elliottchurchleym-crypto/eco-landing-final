@@ -1759,7 +1759,6 @@ section {
   font-weight: 600;
   letter-spacing: 0.75px;
   opacity: 0.9;
-<<<<<<< HEAD
 }
 /* FUTURISTIC ECM HERO */
 
@@ -1860,6 +1859,4 @@ section {
 .ecm-logo-glow::after {
   transform: scale(1.33);
   opacity: 0.12;
-=======
->>>>>>> origin/landing-v2
 }
