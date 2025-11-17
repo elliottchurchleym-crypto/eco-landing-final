@@ -1760,3 +1760,103 @@ section {
   letter-spacing: 0.75px;
   opacity: 0.9;
 }
+/* FUTURISTIC ECM HERO */
+
+.ecm-hero {
+  padding: 80px 0 120px 0;
+  position: relative;
+  overflow: hidden;
+  background: radial-gradient(circle at 50% 0%, #1d0069, #050014 60%);
+}
+
+/* Animated gradient aura (111 effect) */
+.ecm-hero::before,
+.ecm-hero::after {
+  content: "";
+  position: absolute;
+  top: -20%;
+  left: -20%;
+  width: 140%;
+  height: 140%;
+  background: conic-gradient(
+    from 111deg,
+    rgba(165, 90, 255, 0.25),
+    rgba(70, 0, 210, 0.2),
+    rgba(0, 0, 0, 0.4)
+  );
+  animation: pulseAura 11s infinite alternate ease-in-out;
+  filter: blur(80px);
+  opacity: 0.45;
+  z-index: 0;
+}
+
+/* Slight offset second layer */
+.ecm-hero::after {
+  background: radial-gradient(
+    circle,
+    rgba(255, 255, 255, 0.05),
+    rgba(90, 0, 255, 0.2),
+    transparent 70%
+  );
+  animation-duration: 7.7s;
+  opacity: 0.25;
+  filter: blur(120px);
+}
+
+/* Pulse animation */
+@keyframes pulseAura {
+  0% {
+    transform: scale(1) rotate(0deg);
+  }
+  100% {
+    transform: scale(1.12) rotate(11deg);
+  }
+}
+
+/* Butterfly hologram */
+.ecm-logo-main {
+  width: 70%;
+  max-width: 840px;
+  border-radius: 40px;
+  overflow: hidden;
+  box-shadow:
+    0 0 40px rgba(170, 70, 255, 0.45),
+    0 0 80px rgba(140, 50, 255, 0.3),
+    inset 0 0 40px rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(24px);
+  margin: 0 auto;
+  display: block;
+  z-index: 1;
+  position: relative;
+}
+
+/* 111 triple glow behind logo */
+.ecm-logo-glow {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 420px;
+  height: 420px;
+  transform: translate(-50%, -50%);
+  background: radial-gradient(circle, rgba(170, 70, 255, 0.5), transparent 70%);
+  filter: blur(80px);
+  opacity: 0.55;
+  z-index: 0;
+}
+
+.ecm-logo-glow::before,
+.ecm-logo-glow::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(255, 255, 255, 0.14), transparent 60%);
+  filter: blur(60px);
+  opacity: 0.25;
+}
+
+/* perfect triple halo offset */
+.ecm-logo-glow::after {
+  transform: scale(1.33);
+  opacity: 0.12;
+}
