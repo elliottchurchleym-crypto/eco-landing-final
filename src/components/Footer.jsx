@@ -1,17 +1,27 @@
+<<<<<<< HEAD
+=======
+// src/components/Footer.jsx
+>>>>>>> origin/landing-v2
 import React from "react";
 
 export default function Footer() {
   return (
     <footer className="ecm-footer" id="contact">
       <div className="footer-inner">
+<<<<<<< HEAD
         
         {/* Title + Description */}
+=======
+        <div className="footer-divider" />
+
+>>>>>>> origin/landing-v2
         <h3 className="footer-title">Join the ECM Circle</h3>
         <p className="footer-sub">
           Be the first to receive updates on Cognitive Capital, AI–Human Systems
           and ECM’s flagship creative universes shaping global culture.
         </p>
 
+<<<<<<< HEAD
         {/* SIGNUP FORM */}
         <form
           id="ecm-subscribe-form"
@@ -73,11 +83,23 @@ export default function Footer() {
         </form>
 
         {/* CONTACT DETAILS */}
+=======
+        <div className="footer-signup">
+          <input
+            className="footer-input"
+            type="email"
+            placeholder="Enter your email"
+          />
+          <button className="footer-btn">Sign Up</button>
+        </div>
+
+>>>>>>> origin/landing-v2
         <div className="footer-contact">
           <p>General enquiries: info@elliottchurchleymedia.com</p>
           <p>Founder contact: founder@elliottchurchleymedia.com</p>
         </div>
 
+<<<<<<< HEAD
         {/* COPYRIGHT */}
         <p className="footer-copy">
           © 2025 Elliott Churchley Media — AI–Human Systems · Cognitive Capital ·
@@ -88,6 +110,12 @@ export default function Footer() {
           ECM — The Cognitive Capital Company.
         </p>
 
+=======
+        <p className="footer-copy">
+          © 2025 Elliott Churchley Media — AI–Human Systems · Cognitive Capital · IP Architecture.
+        </p>
+        <p className="footer-tagline">ECM — The Cognitive Capital Company.</p>
+>>>>>>> origin/landing-v2
       </div>
     </footer>
   );
