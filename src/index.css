@@ -497,9 +497,6 @@ body {
   background-attachment: fixed;
   overflow-x: hidden;
 }
-/* ===========================
-   ECM HERO CINEMATIC FADE
-   =========================== */
 
 .hero-wrapper {
   position: relative;
@@ -1069,9 +1066,6 @@ section {
   font-size: 14px;
   line-height: 1.55;
 }
-/* ============================= */
-/*      PILLARS 2x2 GRID         */
-/* ============================= */
 
 .pillars-grid-2x2 {
   margin-top: 40px;
@@ -1141,9 +1135,6 @@ section {
   line-height: 1.6;
   opacity: 0.92;
 }
-/* ============================ */
-/*        ECM ECOSYSTEM         */
-/* ============================ */
 
 .eco-section {
   position: relative;
@@ -1522,9 +1513,6 @@ section {
   opacity: 1;
   transform: translateY(0);
 }
-/* ==========================================================
-   ECM — FOOTER SECTION (LUXURY TECH + PINK ILLUMINATION)
-   ========================================================== */
 
 .ecm-footer {
   text-align: center;
@@ -1638,9 +1626,6 @@ section {
   letter-spacing: 0.7px;
   opacity: 0.9;
 }
-/* ==========================================================
-   ECM — FOOTER SECTION (BALANCED + ILLUMINATED)
-   ========================================================== */
 
 .ecm-footer {
   padding: 60px 20px 70px;
@@ -1753,15 +1738,6 @@ section {
   opacity: 0.72;
 }
 
-.footer-tagline {
-  margin-top: 4px;
-  font-size: 14px;
-  font-weight: 600;
-  padding: 80px 0 120px 0;
-  position: relative;
-  overflow: hidden;
-  background: radial-gradient(circle at 50% 0%, #1d0069, #050014 60%);
-}
 
 /* Animated gradient aura (111 effect) */
 .ecm-hero::before,
@@ -1783,7 +1759,15 @@ section {
   opacity: 0.45;
   z-index: 0;
 }
+.footer-tagline {
+  margin-top: 6px;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0.7px;
+  opacity: 0.9;
+}     /* ← THIS bracket must be clean */
 
+/* FUTURISTIC ECM HERO */
 /* Slight offset second layer */
 .ecm-hero::after {
   background: radial-gradient(
